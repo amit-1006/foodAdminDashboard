@@ -36,7 +36,7 @@ const LoginAs=()=>{
     <Route exact path='/user' component={User}/>
     <Route exact path='/adminlogin' component={AdminLogin}/>
     <Route exact path='/error' component={Error}/>
-    {isAdmin? <Route exact path='/admin' component={Admin}/>:<Redirect to='/adminlogin'/>}
+    {isAdmin? <Route exact path='/admin' component={Admin}/>:<Redirect to='/'/>}
     
     
   </Switch>
